@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Click Here</p>
+
+    <input id="input-data" />
+    <hr />
+
+    <form>
+      <div id="product">
+        <div id="data-input">
+          <label for userInput>Product Name</label>
+          <div>
+            <input
+              type="text"
+              id="user-input"
+              name="userInput"
+              maxlength="30"
+            />
+            <span><span id="remainingChars">30</span>/30</span>
+          </div>
+        </div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

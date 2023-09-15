@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+form{
+    margin:20px auto;
+    width:500px;
+    
+   
+    
+}
+#product{
+background-color: rgb(214, 185, 185);
+border: 1px solid grey;
+border-radius: 8px;
+padding:20px 10px;
+margin:15px 10px;
+}
+#data-input{
+display: flex;
+    flex-direction: column;
+}
+input{
+    leng
+}
+
+input:active{
+background-color: yellow;
+border-color:blue;
+}
+
+button{
+margin:10px 0;
+border-radius:5px;
+background-color:greenyellow;
+padding:5px 5px;
+}
