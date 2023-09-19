@@ -42,3 +42,13 @@ function countChars(event) {
 }
 
 inputData.addEventListener('input', countChars);
+
+remainingChars.style.color = 'teal';
+remainingChars.style.fontSize = '1rem';
+
+
+const spanElement = document.getElementById('remainingChars');
+//spanElement.className = 'warning'; adding  a new class using className or overite existing class
+
+spanElement.classList.add('warning'); //adding a new class without overwriting existing class
+spanElement.classList.remove('warning') // removing the new class without overwriting existing class
