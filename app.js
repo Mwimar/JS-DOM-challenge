@@ -23,19 +23,19 @@ function calcUserData(event) {
 //character counter
 //1. getting elements that need to be changed
 
-let inputData = document.getElementById('user-input');
+const inputData = document.getElementById('user-input');
 
-let remainingChars = document.getElementById('remainingChars');
+const remainingChars = document.getElementById('remainingChars');
 
 // Retrieving the maximum allowed characters;
-let maxAllowedChars = inputData.maxLength;
+const maxAllowedChars = inputData.maxLength;
 
 
 function countChars(event) {
     // calculate  characteres on input;
-    let inputValue = event.target.value;
-    let charsLength = inputValue.length;
-    let charsRemaining = maxAllowedChars - charsLength;
+    const inputValue = event.target.value;
+    const charsLength = inputValue.length;
+    const charsRemaining = maxAllowedChars - charsLength;
 
     // updating Remaining characters
     remainingChars.textContent = charsRemaining;
