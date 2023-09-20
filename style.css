@@ -36,3 +36,8 @@ border-radius:5px;
 background-color:greenyellow;
 padding:5px 5px;
 }
+
+
+.warning{
+    color:red;
+}
