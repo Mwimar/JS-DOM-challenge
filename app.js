@@ -40,14 +40,20 @@ function countChars(event) {
     // updating Remaining characters
     remainingChars.textContent = charsRemaining;
 
-    if (charsRemaining <=15) {
+    if (charsRemaining ===0) {
+        remainingChars.classList.add('error');
+        inputData.classList.add('error');
+        
+    } else if (charsRemaining <=15) { 
         remainingChars.classList.add('warning');
         inputData.classList.add('warning');
-        
+        remainingChars.classList.remove('error',);
+        inputData.classList.remove('error');
+
     } else {
         remainingChars.classList.remove('warning');
-        inputData.classList.remove('warning');
-        
+        inputData.classList.remove('warning',);
+                
     }
 }
 
