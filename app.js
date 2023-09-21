@@ -67,3 +67,11 @@ const spanElement = document.getElementById('remainingChars');
 
 spanElement.classList.add('warning'); //adding a new class without overwriting existing class
 spanElement.classList.remove('warning') // removing the new class without overwriting existing class
+
+
+
+
+let isLoggedIn = false;
+if (!isLoggedIn) {
+    console.log("user not logged in!")
+}
