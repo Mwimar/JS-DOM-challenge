@@ -61,7 +61,10 @@
         <p>Test your like and find out how many dice rolls (1-6) it takes you to roll a 6</p>
         <div class="control">
             <label for ="user-target-number">
-            <input type ="number" id="user-target-number">
+            <input type ="number" id="user-target-number" min="1" max="6">
+            <button>Roll the Dice</button>
+            <ul id="dice-rolls"></ul>
+            <p>it took you <span id="output-total-rolls" class="output">X</span> to roll a <span id="output-target-number">Y</span></p>
         </div>
     </section>
   </body>

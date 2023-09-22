@@ -66,3 +66,45 @@ function displayData() {
 
 displayDataButton.addEventListener('click', displayData);
 
+
+
+//Statistics with While loop
+
+const rollDiceButtonElement = document.querySelector('#statistics button');
+const outputListElement = document.getElementById('dice-rolls');
+
+function rollTheDice() {
+    return Math.floor(Math.random() * 6)+1;    
+}
+
+function numberOfDiceRolls(){
+    const targetNumberInput = document.getElementById('user-target-number');
+    const enteredNumber = targetNumberInput.value;
+    const diceRollsList = document.getElementById('dice-rolls');
+    diceRollsList.innerHTML = "";
+    
+    let NumberofRolls = 0;
+    let hasRolled = false;
+    while (!hasRolled) {
+        const rolledNumber = rollTheDice();
+        // if (rolledNumber == enteredNumber) {
+        //     hasRolled = true;
+        // }
+
+        NumberofRolls++;
+        const newRollListElement = document.createElement('li');
+        outputText = 'Roll' + " :" + rolledNumber;
+        newRollListElement.textContent = outputText;
+        outputListElement.append(newRollListElement);
+        hasRolled = rolledNumber == enteredNumber;//loop stops after rolled number= entered number
+
+        const outPutTotalRolls = document.getElementById('output-total-rolls');
+        const outPutTargetNumber = document.getElementById('output-target-number');
+
+        outPutTargetNumber.textContent = enteredNumber;
+        outPutTotalRolls.textContent = NumberofRolls;
+     }
+
+}
+
+rollDiceButtonElement.addEventListener('click', numberOfDiceRolls);
