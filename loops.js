@@ -20,8 +20,8 @@ const loggedInUser = {
 
 //for in loop for objects
 for (const propertyName in loggedInUser) {
-    console.log(propertyName);
-    console.log(loggedInUser[propertyName])
+    console.log(propertyName + loggedInUser[propertyName]);
+    
 }
 
 let isFinished = false;
